@@ -81,6 +81,7 @@ atom <comando> [subcomando] [args]
 | `atom rmpycache` | - | Elimina carpetas `__pycache__` de forma recursiva en el directorio actual. |
 | `atom repo-tree` | - | Imprime el árbol del repo actual (profundidad 5, excluye `.venv`) y lo copia al portapapeles. |
 | `atom repos [path] [ssh_name]` | `path` opcional, `ssh_name` opcional | Recorre repos bajo `path` (por defecto `~/Documents/git`) y muestra estado (necesita pull, commits pendientes, divergencia, cambios locales). |
+| `atom dev sync` | - | Actualiza la version instalada de atom a fin de probar localmente nuevas funcionalidades|
 
 ### SSH
 
