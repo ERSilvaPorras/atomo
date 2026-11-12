@@ -58,6 +58,10 @@ case "$COMMAND" in
         . "$SCRIPT_DIR/../lib/commands/docker.sh"
         docker "$@"
         ;;
+    dev)
+       . "$SCRIPT_DIR/../lib/commands/dev.sh"
+       dev "$@"
+       ;;
     *)
         echo "Command not found"
         ;;
