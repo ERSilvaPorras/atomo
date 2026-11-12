@@ -11,8 +11,8 @@ scr() {
         REPO_DIR="."
     fi
 
-    if [ "$NAME_REPO" = "atom" ]; then
-        REPO_DIR="$HOME/.atom"
+    if [ "$NAME_REPO" = "atomo" ]; then
+        REPO_DIR="$HOME/.atomo"
     fi
 
     git -C "$REPO_DIR" config --local user.name "ERSilvaPorras"

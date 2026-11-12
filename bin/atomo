@@ -4,7 +4,7 @@ set -eu
 
 SCRIPT_PATH="$(readlink -f "$0")"
 SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
-INSTALL_DIR="$HOME/.atom"
+INSTALL_DIR="$HOME/.atomo"
 
 COMMAND="${1:-}"
 shift

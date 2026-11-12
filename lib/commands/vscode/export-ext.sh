@@ -8,7 +8,7 @@ export_ext() {
 
     if [ ! -d "$INSTALL_DIR" ]; then
         git clone "$REPO_BACKUP_URL" "$INSTALL_DIR"
-        atom src "$(basename "$INSTALL_DIR")"
+        atomo src "$(basename "$INSTALL_DIR")"
     fi
 
     if [ ! -d  "$INSTALL_DIR/.git" ]; then

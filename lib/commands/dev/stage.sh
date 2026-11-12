@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 dev_stage() {
-    local ATOM_DIR="$HOME/.atom"
+    local ATOM_DIR="$HOME/.atomo"
     
     printf "➜ Verifying the rsync installation...   "
     if ! command -v rsync >/dev/null 2>&1; then
@@ -10,7 +10,7 @@ dev_stage() {
     fi
     printf "✔\n"
     
-    printf "➜ Verifying the Atom installation...   "
+    printf "➜ Verifying the Atomo installation...   "
     if [ ! -d "$ATOM_DIR" ]; then
         printf "✖\n"
         exit 1
@@ -19,7 +19,7 @@ dev_stage() {
     
     printf "➜ Checking for local changes ...   "
     local SRC_DIR="./"
-    local DST_DIR="$HOME/.atom"
+    local DST_DIR="$HOME/.atomo"
     local CHANGES
     CHANGES=$(rsync -rlcinh --delete --exclude '.git' "$SRC_DIR" "$DST_DIR" )
 

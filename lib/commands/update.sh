@@ -2,17 +2,17 @@
 set -eu
 
 update() {
-    echo "[INFO] Updating Atom CLI ..."
+    echo "[INFO] Updating Atomo CLI ..."
 
     # check installation
     if [ ! -d "$INSTALL_DIR" ]; then
-        echo "[ERROR] Atom is not installed. Please run install.sh first."
+        echo "[ERROR] Atomo is not installed. Please run install.sh first."
         exit 1
     fi
 
     # check if it's a git repository
     if [ ! -d "$INSTALL_DIR/.git" ]; then
-        echo "[ERROR] Atom installation is not a git repository. Cannot update."
+        echo "[ERROR] Atomo installation is not a git repository. Cannot update."
         exit 1
     fi
         

@@ -6,7 +6,7 @@ sshup() {
     NAME_SSH_KEY="${1:-}"
 
     if [ -z "$NAME_SSH_KEY" ]; then
-        echo "[ERROR] Missing key suffix. Usage: atom sshup <key_suffix>"
+        echo "[ERROR] Missing key suffix. Usage: atomo sshup <key_suffix>"
         exit 1
     fi
 
